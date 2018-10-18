@@ -175,7 +175,7 @@ else {
 }
 
 
-*/
+
 
 //déclarer les variables
 var age;
@@ -202,4 +202,16 @@ else if (age >=60 && age >= 18) {
 }
 else {
     console.log("Vous êtes majeur!")
+}
+
+*/
+
+for (i=0; i<=5; i++) {
+    console.log(i);
+}
+var i = 0
+
+while (i < 5) {
+    console.log(i);
+    i++;
 }
