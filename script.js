@@ -129,7 +129,7 @@ else {
 //"les chiffres sont différents"
 
 --------------------------------------------------------
-*/
+
 
 //déclarer les variables
 var age;
@@ -155,5 +155,51 @@ else {
 }
 
 
-
 //"les chiffres sont différents"
+
+var a = 5;
+var b = 6;
+var c = 7;
+
+if (a == b) {
+    console.log("a et b sont égaux");
+} 
+else if (a == c) {
+    console.log("a et c sont égaux");
+}
+else if (b == c) {
+    console.log("b et c sont égaux");
+}
+else {
+    console.log("tous les chiffres sont différents");
+}
+
+
+*/
+
+//déclarer les variables
+var age;
+var anneeFictive;
+var anneeNaissance;
+var ageFictive;
+//demander l'age
+age = parseInt(prompt("Quel Age avez vous ?"));
+//demander l'année fictive
+anneeFictive = parseInt(prompt("Une année dans le futur pour savoir votre âge à ce moment là?"))
+//calcul de l'année
+anneeNaissance = 2018 - age;
+//calcul age fictif
+ageFictive = (anneeFictive - anneeNaissance);
+//Afficher les résultats
+console.log("Vous êtes né en "+anneeNaissance);
+console.log("En "+anneeFictive +" vous aurez " +ageFictive +" ans!");
+
+if (age<=18) {
+    console.log("Vous êtes mineur")
+}
+else if (age >=60 && age >= 18) {
+    console.log("C'est la retraite !!!!")
+}
+else {
+    console.log("Vous êtes majeur!")
+}
